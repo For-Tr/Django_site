@@ -1,0 +1,122 @@
+
+{% extends "index.html" %}
+
+
+{% block content %}
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+</style>
+    
+
+    <div>
+
+        <h1 style=" margin-bottom: 1em;  display: inline-block;">商品列表</h1>
+        <a href="{% url 'parking_space_create' %}" style="margin-left: 17em; margin-bottom: 1em;  display: inline-block;">新增捐赠商品</a>
+    </div>
+    <tr>
+
+    </tr>
+    
+    <table style="">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th style="padding-left: 2em;">捐赠者</th>
+                <th style="padding-left: 2em;">名称</th>
+                <th style="padding-left: 2em;">可否领取</th>
+                <th style="padding-left: 2em;">价值</th>
+                <th style="padding-left: 2em;">操作</th>
+            </tr>
+        </thead>
+        <tbody id="space-list">
+           
+            {% for space in spaces %}
+            <tr>
+              <td>{{ space.id }}</td>
+              <td style="padding-left: 2em;">{{ space.owner.username }}</td>
+              <td style="padding-left: 2em;">{{ space.location }}</td>
+              <td style="padding-left: 2em;">{% if space.availability %}是{% else %}否{% endif %}</td>
+              <td style="padding-left: 2em;">{{ space.hourly_price }}</td>
+              <td style="padding-left: 2em;">
+                                  <a href="{% url 'parking_space_detail' id=space.id %}">加入愿望</a>
+                                  <a href="{% url 'parking_space_delete' id=space.id %}">删除</a>
+
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+    </table>
+<script>
+   const spaceList = document.getElementById('space-list');
+  const locationInput = document.getElementById('location-input');
+
+  // Filter by location function
+  function filterByLocation() {
+      const location = locationInput.value.toLowerCase();
+      const rows = spaceList.getElementsByTagName('tr');
+
+      for (let i = 1; i < rows.length; i++) {
+          const locationCell = rows[i].getElementsByTagName('td')[2];
+          const locationText = locationCell.innerText.toLowerCase();
+
+          if (locationText.includes(location)) {
+              rows[i].style.display = '';
+          } else {
+              rows[i].style.display = 'none';
+          }
+      }
+  }
+</script>
+
+    <script>
+
+const defaultBtn = document.getElementById('default-btn');
+const hourlyPriceBtn = document.getElementById('hourly-price-btn');
+const dailyPriceBtn = document.getElementById('daily-price-btn');
+
+
+
+
+function sortByID() {
+
+}
+
+
+function sortByHourlyPrice() {
+
+}
+
+
+function sortByDailyPrice() {
+
+}
+
+
+defaultBtn.addEventListener('click', sortByID);
+hourlyPriceBtn.addEventListener('click', sortByHourlyPrice);
+dailyPriceBtn.addEventListener('click', sortByDailyPrice);
+
+
+
+
+
+    </script>
+    {% endblock %}

@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+
+{% block content %}
+    <h1  style="margin-left: 18em; margin-bottom: 1em;  display: inline-block;">捐赠物品</h1>
+    <form method="post" style="margin-left: 28em; ">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div>
+            <button type="submit" style="margin-top: 1em; padding: 4px; background-color: #c6c6c6; color: white; border-radius: 10px;">保存</button>
+            <a href="{% url 'parking_space_list' %}" style="margin-left: 15em;">取消</a>
+        </div>
+       
+    </form>
+   
+{% endblock %}

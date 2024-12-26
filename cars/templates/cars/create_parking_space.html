@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Parking Space</title>
+</head>
+<body>
+    <h1>Create New Parking Space</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="hourly_price">Hourly Price:</label>
+        <input type="number" id="hourly_price" name="hourly_price" step="0.01" required>
+
+        <label for="daily_price">Daily Price:</label>
+        <input type="number" id="daily_price" name="daily_price" step="0.01" required>
+
+        <label>Availability:</label>
+        <input type="checkbox" id="availability" name="availability" value="True" checked>
+
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{% url 'parking_space_list' %}">Cancel</a>
+</body>
+</html>

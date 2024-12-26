@@ -1,0 +1,224 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>爱心捐赠网</title>
+
+<!-- Fav Icon -->
+
+<!-- Google Fonts -->
+
+<!-- Stylesheets -->
+
+    <link href="{% static 'css/login.css' %}" rel="stylesheet">
+
+
+<link href="{% static 'css/animate.css' %}" rel="stylesheet">
+<link href="{% static 'css/nice-select.css' %}" rel="stylesheet">
+
+<link href="{% static 'css/elpath.css' %}" rel="stylesheet">
+
+<link href="{% static 'css/rtl.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+<script>
+
+    function checkLogin() {
+        var isLogin = localStorage.getItem('is_login.PICAR');
+        var userName = localStorage.getItem('username.PICAR');
+
+        if (isLogin) {
+            document.getElementById('user-greeting').textContent = 'Hello, ' + userName;
+            document.getElementById('user-menu').style.display = 'block';
+            document.getElementById('login-button').style.display = 'none';
+        } else {
+            document.getElementById('user-greeting').textContent = '';
+            document.getElementById('user-menu').style.display = 'none';
+            document.getElementById('login-button').style.display = 'block';
+        }
+    }
+
+    function logout() {
+    localStorage.removeItem('is_login.PICAR');
+    localStorage.removeItem('username.PICAR');
+
+    fetch('/user_logout', {
+        method: 'GET',
+    })
+    .catch(error => {
+        console.error(error);
+    });
+
+    checkLogin();
+}
+
+</script>
+</head>
+
+
+<!-- page wrapper -->
+<body  onload="checkLogin()">
+
+    <div class="boxed_wrapper ltr">
+
+
+        <!-- page-direction -->
+
+        <!-- page-direction end -->
+
+
+        <!-- main header -->
+        <header class="main-header">
+
+            <!-- header-uper -->
+
+            <!-- header-lower -->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="menu-area">
+
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                            </div>
+                            <nav class="main-menu navbar-expand-md navbar-light clearfix">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+
+                                    <ul class="navigation clearfix">
+
+                                        <li><a href="{% url 'parking_space_list' %}">首页</a></li>
+                                        <li><a href="{% url 'provider_rental_history' %}">愿望单</a></li>
+                                        
+ <li class="dropdown" id="user-menu" style="display: none; margin-left: 50vw;">
+                                                <a id="user-greeting" href=""></a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" onclick="logout()" style="color: rgb(216, 48, 48);">退出登录</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="menu-right-content">
+                            <div></div>
+                            <ul>
+
+                                <li id="login-button">
+                                    <div class="login-box"><a href="{% url 'loginpage' %}"><i class="icon-7"></i>登录/注册</a></div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo"><a href="{% url '' %}"><img src="{% static '/images/logo.png' %}" alt=""></a></figure>
+                        </div>
+                        <div class="menu-area">
+                            <nav class="main-menu clearfix">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav>
+                        </div>
+                        <div class="menu-right-content">
+
+                            <div class="login-box"><a href="{% url '' %}"><i class="icon-7"></i>My Account</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="{% url '' %}"><img src="{% static '/images/logo.png' %}" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="{% url '' %}"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="{% url '' %}"><span class="fab fa-facebook-square"></span></a></li>
+                        <li><a href="{% url '' %}"><span class="fab fa-pinterest-p"></span></a></li>
+                        <li><a href="{% url '' %}"><span class="fab fa-instagram"></span></a></li>
+                        <li><a href="{% url '' %}"><span class="fab fa-youtube"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+        {% block content %}
+
+
+
+
+        <img src="{% static '/images/car/780.jpg' %}" alt="" title="" style="width:100vw;">
+
+
+
+
+
+
+
+
+
+
+
+        <!-- main-footer end -->
+        {% endblock %}
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top">
+            <div>
+                <div class="scroll-top-inner">
+                    <div class="scroll-bar">
+                        <div class="bar-inner"></div>
+                    </div>
+                    <div class="scroll-bar-text">Go To Top</div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to top end -->
+
+    </div>
+
+
+    <!-- jequery plugins -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/isotope.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/text_animation.js' %}"></script>
+    <script src="{% static 'js/text_plugins.js' %}"></script>
+    <script src="{% static 'js/parallax-scroll.js' %}"></script>
+
+    <!-- main-js -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body><!-- End of .page_wrapper -->
+</html>

@@ -1,0 +1,518 @@
+
+/** color-css **/
+
+.header-top .top-inner p i{
+  color: var(--theme-color);
+}
+
+.header-top .top-inner .social-links li a:hover{
+  color: var(--theme-color);
+}
+
+.header-upper .upper-inner .right-column .info-list li i{
+  color: var(--theme-color);
+}
+
+.header-upper .upper-inner .right-column .info-list li a:hover{
+  color: var(--theme-color);
+}
+
+.header-upper .upper-inner .right-column .search-inner .form-group input:focus{
+  border-color: var(--theme-color) !important;
+}
+
+.header-upper .upper-inner .right-column .search-inner .form-group button[type='submit']{
+  background: var(--theme-color);
+}
+
+.main-menu .navigation > li.current > a,
+.main-menu .navigation > li:hover > a{
+  color: var(--theme-color);
+}
+
+.main-menu .navigation > li > ul,
+.main-menu .navigation > li > .megamenu{
+  background: var(--theme-color);
+}
+
+.main-menu .navigation > li > ul > li > ul{
+  background: var(--theme-color);
+}
+
+.main-header .menu-right-content .login-box a:hover{
+  color: var(--theme-color);
+}
+
+.banner-carousel .content-box .special-text{
+  color: var(--secondary-color);
+}
+
+.booking-inner .form-group .icon{
+  color: var(--theme-color);
+}
+
+.booking-inner:before{
+  background: var(--theme-color);
+}
+
+.booking-inner form .btn-box button[type='submit']{
+  background: var(--theme-color);
+}
+
+.booking-inner form .btn-box button[type='submit']:hover{
+  background: var(--secondary-color) !important;
+}
+
+.sec-title .sub-title{
+  color: var(--secondary-color);
+}
+
+.content_block_one .content-box .inner-box .single-item .icon-box{
+  color: var(--theme-color);
+}
+
+.content_block_one .content-box .inner-box .single-item .icon-box:before{
+  background: var(--theme-color);
+}
+
+.chooseus-block-one .inner-box .icon-box{
+  color: var(--theme-color);
+}
+
+.chooseus-block-one .inner-box h3 a:hover{
+  color: var(--theme-color);
+}
+
+.tours-block-one .inner-box .lower-content h4 a:hover{
+  color: var(--theme-color);
+}
+
+.tours-block-one .inner-box .lower-content h5{
+  color: var(--theme-color);
+}
+
+.tours-block-one .inner-box .lower-content .link a:hover{
+  color: var(--theme-color); 
+}
+
+.tours-section .tab-btns li.active-btn,
+.tours-section .tab-btns li:hover{
+  background: var(--theme-color);
+}
+
+.category-block-one .inner-box h4 a:hover{
+  color: var(--theme-color); 
+}
+
+.dots-style-one .owl-dots .owl-dot.active span,
+.dots-style-one .owl-dots .owl-dot span:hover{
+  border-color: var(--theme-color);
+}
+
+.dots-style-one .owl-dots .owl-dot.active span:before,
+.dots-style-one .owl-dots .owl-dot span:hover:before{
+  background: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+.video-section .video-btn a{
+  background: var(--theme-color);
+}
+
+.nav-style-one .owl-nav button:hover{
+  background: var(--theme-color);
+}
+
+.news-block-one .inner-box .lower-content .post-info li a{
+  color: var(--theme-color);
+}
+
+.news-block-one .inner-box .lower-content .post-info li a:hover{
+  background: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+.news-block-one .inner-box .lower-content h3 a:hover{
+  color: var(--theme-color);
+}
+
+.subscribe-section .inner-container{
+  background: var(--theme-color);
+}
+
+.main-footer a:hover{
+  color: var(--theme-color);
+}
+
+.footer-bottom .bottom-inner .copyright p a{
+  color: var(--theme-color);
+}
+
+.footer-bottom .social-links li a:hover{
+  color: var(--theme-color);
+}
+
+.theme-btn.btn-one{
+  background: var(--theme-color);
+}
+
+.theme-btn:before{
+  background: var(--secondary-color);
+}
+
+.main-header .search-box-outer:hover{
+  color: var(--theme-color);
+}
+
+
+
+.home-2 .main-menu .navigation > li.current > a, 
+.home-2 .main-menu .navigation > li:hover > a{
+  color: #8CCF2D;
+}
+
+.home-2 .main-menu .navigation > li > ul, 
+.home-2 .main-menu .navigation > li > .megamenu{
+  background: #8CCF2D;
+}
+
+.home-2 .main-menu .navigation > li > ul > li > ul{
+  background: #8CCF2D;
+}
+
+.home-2 .theme-btn.btn-one{
+  background: #8CCF2D;
+}
+
+.home-2 .main-header .search-box-outer:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .menu-area .mobile-nav-toggler{
+  background: #8CCF2D;
+}
+
+.home-2 button.rtl{
+  background: #8CCF2D;
+}
+
+.home-2 button.ltr{
+  background: #8CCF2D;
+}
+
+.banner-style-two .content-box .title-text{
+  color: var(--secondary-color);
+}
+
+.home-2 .booking-inner:before{
+  background: #8CCF2D;
+}
+
+.home-2 .booking-inner .form-group .icon{
+  color: #8CCF2D;
+}
+
+.home-2 .booking-inner form .btn-box button[type='submit']{
+  background: #8CCF2D;
+}
+
+.home-2 .place-style-two .sec-title a:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .place-block-two .inner-box h4 a:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .tours-section .tab-btns li.active-btn, 
+.home-2 .tours-section .tab-btns li:hover{
+  background: #8CCF2D;
+}
+
+.home-2 .tours-block-one .inner-box .lower-content h4 a:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .tours-block-one .inner-box .lower-content h5{
+  color: #8CCF2D;
+}
+
+.home-2 .tours-block-one .inner-box .lower-content .link a:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .content_block_two .content-box .inner-box .single-item h2{
+  color: #8CCF2D;
+}
+
+.home-2 .pricing-block-one .pricing-table .content-box h4 a:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .pricing-block-one .pricing-table .content-box h5{
+  color: #8CCF2D;
+}
+
+.home-2 .news-block-one .inner-box .lower-content .post-info li a{
+  color: #8CCF2D;
+}
+
+.home-2 .news-block-one .inner-box .lower-content .post-info li a:hover{
+  background: #8CCF2D;
+  border-color: #8CCF2D;
+}
+
+.home-2 .news-block-one .inner-box .lower-content h3 a:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .main-footer a:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .footer-bottom .bottom-inner .copyright p a{
+  color: #8CCF2D;
+}
+
+.home-2 .footer-bottom .social-links li a:hover{
+  color: #8CCF2D;
+}
+
+.home-2 .scroll-to-top .scroll-bar-text{
+  color: #8CCF2D;
+}
+
+.home-2 .testimonial-style-two .owl-theme .owl-dots .owl-dot span{
+  background: #8CCF2D;
+}
+
+
+
+.banner-style-three .content-box .title-text{
+  color: var(--secondary-color);
+}
+
+.pricing-block-one .pricing-table .content-box h5{
+  color: var(--theme-color);
+}
+
+.pricing-block-one .pricing-table .content-box h4 a:hover{
+  color: var(--theme-color);
+}
+
+.testimonial-style-two .owl-theme .owl-dots .owl-dot span{
+  background: var(--theme-color);
+}
+
+.destinations-section .tab-btns li.active-btn,
+.destinations-section .tab-btns li:hover{
+  background: var(--theme-color);
+}
+
+.destinations-block-one .inner-box h4 a:hover{
+  color: var(--theme-color);
+}
+
+.destinations-block-one .inner-box p span{
+  color: var(--theme-color);
+}
+
+.instagram-block-one .inner-box .text-box a:hover{
+  color: var(--theme-color);
+}
+
+.light-footer .logo-widget .info-list li a:hover{
+  color: var(--theme-color);
+}
+
+.light-footer a:hover{
+  color: var(--theme-color);
+}
+
+.light-footer .footer-bottom .social-links li a:hover{
+  color: var(--theme-color);
+}
+
+.page-title .content-box span{
+  color: var(--secondary-color);
+}
+
+.destination-details .content-box .theme-btn:hover{
+  background: var(--secondary-color);
+}
+
+.range-slider .ui-slider .ui-slider-range{
+  background: var(--theme-color);
+}
+
+.range-slider .ui-widget-content .ui-state-default{
+  background: var(--theme-color);
+}
+
+.tour-sidebar .filter-widget .btn-box .clear-btn:hover{
+  color: var(--theme-color);
+}
+
+.tour-sidebar .check-box label:after{
+  background: var(--theme-color);
+}
+
+.item-shorting .text p span{
+  color: var(--theme-color);
+}
+
+.tours-block-one .inner-box .image-box .offer-box{
+  background: #69BA3C;
+}
+
+.pagination li a:hover,
+.pagination li a.current{
+  background: var(--theme-color);
+}
+
+.tour-details .upper-box .video-inner .video-btn a{
+  background: var(--theme-color);
+}
+
+.tour-details-content .title-box .info-list li i{
+  color: var(--theme-color);
+}
+
+.tour-details-content .title-box .info-list li h4.price{
+  color: var(--theme-color);
+}
+
+.tour-details-content .accordion-box .acc-btn span{
+  background: var(--theme-color);
+}
+
+.tour-details-content .accordion-box .acc-btn.active .icon-box{
+  color: var(--theme-color);
+}
+
+.tour-details-content .review-inner .text-box h2{
+  color: var(--theme-color);
+}
+
+.tour-details-content .comment-box .single-comment .comment-inner .reply-btn{
+  background: var(--theme-color);
+}
+
+.tour-details-content .comment-box .single-comment .comment-inner .reply-btn:hover{
+  background: var(--secondary-color);
+}
+
+.tour-details-content .comment-box form .form-group input:focus,
+.tour-details-content .comment-box form .form-group textarea:focus{
+  border-color: var(--theme-color) !important;
+}
+
+.tour-details-content .check-box label:after{
+  background: var(--theme-color);
+}
+
+.tour-sidebar-two .date-box .icon-box{
+  color: var(--theme-color);
+}
+
+.tour-sidebar-two .total-box span{
+  color: var(--theme-color);
+}
+
+.cal-month-block .cal-week-name{
+  background: var(--theme-color);
+}
+
+.cal-month-block .cal-cell.cal-cell-active .cal-cell-pricefrom{
+  color: var(--theme-color);
+}
+
+.tour-details-content .tab-btns li.active-btn{
+  background: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+.tour-details-content .tab-btns li:before{
+  background: var(--theme-color);
+}
+
+.cart-section .content-box .single-product-box .inner-box .price{
+  color: var(--theme-color);
+}
+
+.cart-section .content-box .coupon-box .form-group input:focus{
+  border-color: var(--theme-color) !important;
+}
+
+.cart-section .content-box .coupon-box .form-group button:hover{
+  background: var(--secondary-color) !important;
+}
+
+.cart-section .content-box .amount-list li:last-child span{
+  color: var(--theme-color);
+}
+
+.cart-sidebar .form-group input:focus{
+  border-color: var(--theme-color) !important;
+}
+
+.cart-sidebar .total-price h3{
+  color: var(--theme-color);
+}
+
+.cart-sidebar .tabs-box .tab-btns li.active-btn{
+  background: var(--theme-color);
+}
+
+.cart-sidebar .check-box label:after{
+  background: var(--theme-color);
+}
+
+.faq-section .accordion-box .accordion .acc-btn.active .icon-box{
+  background: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+.error-section h2 span{
+  color: var(--theme-color);
+}
+
+.news-block-one .inner-box .lower-content h2 a:hover{
+  color: var(--theme-color);
+}
+
+.blog-details-content .comment-form .form-group input:focus,
+.blog-details-content .comment-form .form-group textarea:focus{
+  border-color: var(--theme-color) !important;
+}
+
+.info-block-one .inner-box .icon-box{
+  background: var(--theme-color);
+}
+
+.info-block-one .inner-box p a:hover{
+  color: var(--theme-color);
+}
+
+.contact-section .form-inner .form-group input:focus,
+.contact-section .form-inner .form-group textarea:focus{
+  border-color: var(--theme-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
