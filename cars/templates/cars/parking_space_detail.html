@@ -2,19 +2,18 @@
 
 {% load static %}
 {% block content %}
-    <h1 style="margin-left: 18em; margin-bottom: 1em;  display: inline-block;">Parking Space Detail</h1>
+    <h1 style="margin-left: 18em; margin-bottom: 1em;  display: inline-block;">商品详情</h1>
     <div style="display: flex;">
         <img src="{% static '/images/car/' %}{{ space.location }}.jpg" alt="" title="" 
         style="height: 30em; margin-left: 25em;">
         <div style="margin-left: 1em;">
 
-            <p>Space ID: {{ space.id }}</p>
-            <p>Owner: {{ space.owner.username }}</p>
-            <p>Location: {{ space.location }}</p>
-            <p>Availability: {% if space.availability %}Available{% else %}Not Available{% endif %}</p>
-            <p>Hourly Price: ${{ space.hourly_price }}</p>
-            <p>Daily Price: ${{ space.daily_price }}</p>
-            <a href="{% url 'parking_space_list' %}">Back to List</a>
+            <p>ID: {{ space.id }}</p>
+            <p>捐赠者: {{ space.owner.username }}</p>
+            <p>名称: {{ space.location }}</p>
+            <p>可否领取: {% if space.availability %}可领取{% else %}不可领取{% endif %}</p>
+            <p>价值: ¥{{ space.hourly_price }}</p>
+            <a href="{% url 'parking_space_list' %}">返回商品列表</a>
 
 
         </div>
